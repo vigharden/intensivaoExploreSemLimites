@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    --color-titles: #B52184;
+    --color-text:#312D64;
+    --color-background-body: #F9F4FB;
+    --color-background-card: #fff;
+    --colo-background-main: #302c63;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    background-color: var(--color-background-body);
+
+    width: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+header img {
+    width: 32rem;
+    height: auto;
+
+    align-self: center;
+
+    margin-bottom: 1.7rem;
+}
+
+.imagem {
+    width: 5rem;
+    height: 10rem;
+
+    margin-top: 3.5rem;
+    margin-bottom: 9.3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+h1 {
+
+    color: var(--color-titles);
+
+    font-size: 2rem;
+    
+    font-weight: 900;
+
+    text-align: center;
+
+    line-height: normal;
+}
+
+header p {
+    color: var(--color-text);
+    font-size: 1.6rem;
+    font-weight: 600;
+
+    text-align: center;
+    line-height: normal;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    
+    background-color: var(--colo-background-main);
+
+    padding: 5.3rem 4rem 1rem 4rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+        
+}
+
+.card {
+    background-color: var(--color-background-card);
+
+    padding: 2rem;
+    border: 2rem;
+    border-radius: 2rem;
+    margin-bottom: 5rem;
+
+    width: 28rem;
+    height: 28rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    box-shadow: 0px 3.311px 13.243px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card img {
+    width: 7rem;
+    height: 7rem;
+    border: 2rem;
+
+    display: flex;
+    align-items: flex-start;
+
+    margin-bottom: 1.5rem;
+}
+
+.card h1 {
+    margin-bottom: 1.2rem;
+    text-align: left;
+}
+
+.card p {
+    font-size: 1.35rem;
+}
+
+.form {
+    padding: 7rem 4rem 6.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form h1 {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 2.4rem;
+}
+
+.form fieldset {
+    margin-bottom: 2.4rem;
+    border: none;
+}
+
+.form input {
+    font-size: 1.6rem;
+    background-color: #F9F4FB;
+    
+    border: none;
+
+    width: 100%;
+}
+
+.form .input-wrapper {
+    border: 1px solid var(--color-text);
+    border-radius: 16px;
+
+    display: flex;
+    align-content: center;
+
+    padding: 1rem;
+
+    margin-bottom: 2.4rem;
+}
+
+.form .input-wrapper img {
+    margin-right: 5px;
+}
+
+fieldset .input-wrapper-message { 
+    height: 10rem;
+
+    border: 1px solid var(--color-text);
+    border-radius: 16px;
+
+    padding: 1rem;
+}
+
+.input-wrapper input {
+    font-size: 1.2rem;
+}
+
+fieldset .input-wrapper-message input {
+    font-size: 1.2rem;
+    height: 8rem; 
+
+    padding: 0 2rem 6rem 0;
+}
+
+::placeholder {
+    color: #312D64;  
+}
+
+form .button {
+    background-color: var(--colo-background-main);
+    color: #fff;
+
+    font-size: 1.4rem;
+
+    display: inline-flex;
+    width: 15rem;;
+    height: 4.5rem;
+    padding: 1.6rem;
+    justify-content: center;
+    align-items: center;
+    
+    flex-shrink: 0;
+
+    border-top: 2rem;
+    border-left: 4rem;
+    border-radius: 16px;
+}
+
+footer {
+    background-color: var(--colo-background-main);
+    
+    width: 100%;
+    height: auto;
+    padding: 3.2rem 1.6rem 3.2rem 1.6rem;
+}
+
+footer p {
+    
+    display: flex;
+    justify-content: center;
+    
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 100%;
+    height: auto;
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    header{
+        max-width: auto;
+
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    
+        height: 500px;
+
+        margin: 0 2rem 0 2rem;
+
+    }
+
+    header .text {
+        display: flex;
+        flex-direction: column;
+        
+        margin: 35rem 0 18rem 10rem;
+    }
+
+    header img {
+        width: 60rem;
+        height: 60rem;
+
+        margin-right: 2rem;
+        display: flex;
+    }
+
+    .imagem {
+        margin: 0 0 5rem 5rem;
+        justify-self: flex-end;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 2rem;
+    }
+
+    .card h1 {
+        font-size: 20px;
+    }
+
+    .card p {
+        font-size: 11px;
+    }
+
+    .form{
+        background: url(assets/pinkdetails.png);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        
+        background-size: 60% 100%;
+
+        padding-left: 6rem;
+        
+    }
+
+    .form .input-wrapper,
+    .form .input-wrapper-message {
+        width: 50%;
+    }
+
+}
